@@ -68,9 +68,10 @@ A modern React.js application that demonstrates text tokenization using js-tikto
    ```
 
 3. **Set up environment variables**
-   Create a `.env` file in the root directory:
+   Create a `.env` file in the root directory by copying `.env.example`:
    ```env
-   REACT_APP_OPENAI_API_KEY=your_openai_api_key_here
+   # Copy .env.example to .env and fill in your actual API key
+   REACT_APP_OPENAI_API_KEY=your_actual_api_key_here
    ```
 
 4. **Start the development server**
