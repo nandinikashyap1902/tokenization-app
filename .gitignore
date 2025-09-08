@@ -13,6 +13,14 @@
 .env.production.local
 .env.*.local
 
+# API keys and secrets - extra protection
+*.key
+*.pem
+*.p12
+*.pfx
+config/secrets.json
+secrets/
+
 # testing
 /coverage
 
