@@ -17,7 +17,7 @@
 
 2. Replace placeholder values in `.env` with your actual API keys:
    ```
-   OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   OPENAI_API_KEY=sk-proj-your_actual_api_key_here
    ```
 
 3. **NEVER** edit `.env.example` with real API keys - it should only contain placeholders

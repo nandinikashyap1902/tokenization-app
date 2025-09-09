@@ -5,14 +5,14 @@
 ### Step 1: Create Environment File
 1. Copy the `.env.example` file to `.env`:
    ```
-   OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   OPENAI_API_KEY=your_actual_openai_api_key_here
    PORT=3001
    ```
 
 2. Get your OpenAI API key:
    - Visit https://platform.openai.com/api-keys
    - Create a new secret key
-   - Replace the placeholder with your actual key
+   - Replace `your_actual_openai_api_key_here` with your actual key
 
 ### Step 2: Install Dependencies
 ```bash
