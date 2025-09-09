@@ -190,17 +190,25 @@ const EmbeddingsSection = () => {
             <div className="embedding-visualization">
               <h4>📈 Vector Visualization</h4>
               <div className="vector-bars">
-                {embedding.embedding.slice(0, 50).map((value, index) => (
-                  <div 
-                    key={index} 
-                    className="vector-bar"
-                    style={{
-                      height: `${Math.abs(value) * 100}px`,
-                      backgroundColor: value >= 0 ? '#4CAF50' : '#FF5722'
-                    }}
-                    title={`Index ${index}: ${value.toFixed(6)}`}
-                  ></div>
-                ))}
+                {embedding.embedding.slice(0, 50).map((value, index) => {
+                  // Calculate height with better scaling - ensure minimum 20px and scale up significantly
+                  const absValue = Math.abs(value);
+                  const scaledHeight = Math.max(20, absValue * 5000); // Much larger multiplier
+                  const maxHeight = 300; // Cap at 300px to fit in container
+                  const finalHeight = Math.min(scaledHeight, maxHeight);
+                  
+                  return (
+                    <div 
+                      key={index} 
+                      className="vector-bar"
+                      style={{
+                        height: `${finalHeight}px`,
+                        backgroundColor: value >= 0 ? '#4CAF50' : '#FF5722'
+                      }}
+                      title={`Index ${index}: ${value.toFixed(6)}`}
+                    ></div>
+                  );
+                })}
               </div>
               <p className="viz-note">Showing first 50 dimensions (green: positive, red: negative)</p>
             </div>

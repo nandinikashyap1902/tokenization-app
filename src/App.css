@@ -413,8 +413,8 @@ body {
 .vector-bars {
   display: flex;
   align-items: end;
-  gap: 2px;
-  height: 200px;
+  gap: 4px;
+  height: 350px;
   padding: 1rem;
   background: #f8f9fa;
   border-radius: 8px;
@@ -422,8 +422,8 @@ body {
 }
 
 .vector-bar {
-  min-width: 4px;
-  border-radius: 2px 2px 0 0;
+  min-width: 10px;
+  border-radius: 3px 3px 0 0;
   transition: all 0.2s ease;
   cursor: pointer;
 }
