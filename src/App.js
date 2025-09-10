@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import TokenizerSection from './components/TokenizerSection';
 import EmbeddingsSection from './components/EmbeddingsSection';
-
 function App() {
   const [activeTab, setActiveTab] = useState('tokenizer');
 
